@@ -132,7 +132,7 @@ get_header();
                 <div class="col-lg-4 col-md-4 col-sm-12 col-12 pens-div">
                     <?php echo get_field('content_7');?>
 
-                    <!-- <img class="w-100" src="https://talkmatters.com.hk/wp-content/uploads/2021/04/pens.jpg" alt=""> -->
+                    <!-- <img class="w-100" src="http://143.198.162.187/wp-content/uploads/2022/08/pens.jpeg" alt=""> -->
 
                 </div>
 

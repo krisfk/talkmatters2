@@ -67,12 +67,12 @@ get_header();
 
                     switch($lang_code)
                     {
-                        case 'en':
-                            echo do_shortcode( '[contact-form-7 id="386" title="Contact form 1" html_class="form contact-form"]' ); 
-                        break;
-                            case 'zh':
-                                echo do_shortcode( '[contact-form-7 id="387" title="Contact form 1" html_class="form contact-form"]' ); 
-                                break;
+                        // case 'en':
+                        //     echo do_shortcode( '[contact-form-7 id="5" title="Contact form 1" html_class="form contact-form"]' ); 
+                        // break;
+                            // case 'zh':
+                            //     echo do_shortcode( '[contact-form-7 id="387" title="Contact form 1" html_class="form contact-form"]' ); 
+                            //     break;
 
                     }
                   }
