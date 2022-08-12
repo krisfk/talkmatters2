@@ -71,7 +71,6 @@ get_header();
         </div>
     </div> -->
 
-    <br>
     <div class=" inner-container text-justify">
 
         <!-- As an emotions guide, we facilitate clients to identify feelings
