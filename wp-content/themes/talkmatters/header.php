@@ -91,7 +91,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
 
 
                         <div class="top-menu-div pt-2">
-                            <ul class="top-menu p-0 m-0 text-center">
+                            <ul class="top-menu p-0 mx-auto text-center d-block">
                                 <?php
         
         $main_menu = wp_get_menu_array('main menu');
