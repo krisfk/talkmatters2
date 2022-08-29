@@ -190,28 +190,42 @@ else
         //     'add_fragment' => '',
         // ) );
 
-        $num = 999999;
+    //     $num = 999999;
 
-	$pagination = paginate_links( array(
-		'base' => str_replace( $num, '%#%', esc_url( get_pagenum_link( $num ) ) ),
-		'format' => '?paged=%#%',
-		'current' => max( 1, get_query_var('paged') ),
-		'total' => $query->max_num_pages,
-		'prev_text' => 'Vorige',
-		'next_text' => 'Volgende',
-	) );
+	// $pagination = paginate_links( array(
+	// 	'base' => str_replace( $num, '%#%', esc_url( get_pagenum_link( $num ) ) ),
+	// 	'format' => '?paged=%#%',
+	// 	'current' => max( 1, get_query_var('paged') ),
+	// 	'total' => $query->max_num_pages,
+	// 	'prev_text' => 'Vorige',
+	// 	'next_text' => 'Volgende',
+	// ) );
 
-	if( $pagination ) {
-		echo "<div id='pager' class='arial clearfix'>{$pagination}</div>";
-	} else {
-		echo '';
-	}
+	// if( $pagination ) {
+	// 	echo "<div id='pager' class='arial clearfix'>{$pagination}</div>";
+	// } else {
+	// 	echo '';
+	// }
     ?>
+
+
                 </div>
 
 
 
-                <!-- 
+                <div class='pagination'>
+                    <?php
+    $big = 999999999;
+      echo paginate_links( array(
+      'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+      'format' => '?paged=%#%',
+      'current' => max( 1, get_query_var('paged') ),
+      'total' => $posts_query->max_num_pages
+    ));
+  ?>
+                    <div>
+
+                        <!-- 
                 <div class="post-short-div">
                     <img class="w-100"
                         src="https://demo.wpexplorer.com/blogger/wp-content/uploads/sites/15/2012/03/hike.jpg" alt="">
@@ -242,20 +256,20 @@ else
                 </div> -->
 
 
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-right-col">
+
+                        <?php get_template_part( 'nav','blog-side-col' );           // Navigation bar (nav.php) ?>
+
+
+
+
+                    </div>
+
+                </div>
+
+
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12 blog-right-col">
-
-                <?php get_template_part( 'nav','blog-side-col' );           // Navigation bar (nav.php) ?>
-
-
-
-
-            </div>
-
         </div>
-
-
-    </div>
-</div>
-<?php
+        <?php
 get_footer();
