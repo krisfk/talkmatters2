@@ -189,6 +189,23 @@ else
         //     'add_args'     => false,
         //     'add_fragment' => '',
         // ) );
+
+        $num = 999999;
+
+	$pagination = paginate_links( array(
+		'base' => str_replace( $num, '%#%', esc_url( get_pagenum_link( $num ) ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $query->max_num_pages,
+		'prev_text' => 'Vorige',
+		'next_text' => 'Volgende',
+	) );
+
+	if( $pagination ) {
+		echo "<div id='pager' class='arial clearfix'>{$pagination}</div>";
+	} else {
+		echo '';
+	}
     ?>
                 </div>
 
@@ -239,7 +256,6 @@ else
 
 
     </div>
-
 </div>
 <?php
 get_footer();
