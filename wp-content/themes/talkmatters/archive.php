@@ -239,6 +239,7 @@ else
 
 
     </div>
+    test
 </div>
 <?php
 get_footer();
