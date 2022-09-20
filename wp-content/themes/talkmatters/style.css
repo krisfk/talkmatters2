@@ -470,7 +470,7 @@ ul.post-meta {
 
 .blog-container a {
     color: #212529;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 .blog-container a:hover {
