@@ -78,7 +78,7 @@ get_header();
                     <ul class="post-meta mt-2">
                         <li class="meta-date">
                             Posted on <span class="meta-date-text">
-                                <?php echo get_the_date();?>
+                                <?php echo get_the_date('d-m-Y');?>
                             </span>
                         </li>
                         <li class="meta-category">
